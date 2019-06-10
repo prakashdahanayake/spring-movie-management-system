@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="436.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.DashboardController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="115.0" layoutY="25.0" prefHeight="40.0" prefWidth="396.0" text="Movie  Management system">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="215.0" layoutY="301.0" prefHeight="27.0" prefWidth="188.0" text="Welcome" textFill="#0f0cd3">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="142.0" layoutY="344.0" prefHeight="24.0" prefWidth="335.0" text="Please select One of above icon to start" />
+      <ImageView fx:id="imgManageMovie" fitHeight="130.0" fitWidth="114.0" layoutX="55.0" layoutY="107.0" onMouseClicked="#imgManageMovie_OnMouseclicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/Captdsure.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgManageActors" fitHeight="114.0" fitWidth="114.0" layoutX="260.0" layoutY="96.0" onMouseClicked="#imgManageActors_OnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/ManageActors.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgRegister" fitHeight="122.0" fitWidth="114.0" layoutX="449.0" layoutY="96.0" onMouseClicked="#imgRegister_OnMouseclicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/RegisterActors.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_CENTER" layoutX="53.0" layoutY="239.0" prefHeight="24.0" prefWidth="114.0" text="Manage Movie" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="263.0" layoutY="239.0" prefHeight="24.0" prefWidth="123.0" text="Manage Actors">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="456.0" layoutY="239.0" prefHeight="24.0" prefWidth="114.0" text="Registor Actors">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutY="81.0" prefHeight="3.0" prefWidth="626.0" />
+      <Separator layoutY="277.0" prefHeight="3.0" prefWidth="626.0" />
+   </children>
+</AnchorPane>

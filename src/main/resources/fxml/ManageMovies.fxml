@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="419.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.ManageMovieController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="171.0" layoutY="29.0" prefHeight="40.0" prefWidth="274.0" text="Manage Movie" textFill="#201779">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="104.0" prefHeight="17.0" prefWidth="100.0" text="Movie ID       :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="145.0" prefHeight="25.0" prefWidth="109.0" text="Movie Name :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMovieId" layoutX="171.0" layoutY="104.0" prefHeight="25.0" prefWidth="417.0" />
+      <TextField fx:id="txtMovieName" layoutX="171.0" layoutY="145.0" prefHeight="25.0" prefWidth="417.0" />
+      <JFXButton fx:id="btnsave" layoutX="236.0" layoutY="185.0" onAction="#btnsave_OnAction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: Green;" text="Save" />
+      <JFXButton fx:id="btnDelete" layoutX="380.0" layoutY="185.0" onAction="#btnDelete_OnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: red;" text="Delete" />
+      <TableView fx:id="tblMovie" layoutX="171.0" layoutY="229.0" prefHeight="165.0" prefWidth="417.0">
+        <columns>
+          <TableColumn prefWidth="107.0" text="ID" />
+          <TableColumn prefWidth="221.0" text="Name" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="btnHome" fitHeight="70.0" fitWidth="73.0" layoutX="18.0" layoutY="16.0" onMouseClicked="#btnHome_Onclicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home-icon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnNewMovie" layoutX="481.0" layoutY="30.0" onAction="#btnNewMovie_OnAction" prefHeight="33.0" prefWidth="109.0" style="-fx-background-color: blue;" text="+ New Movie">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>
